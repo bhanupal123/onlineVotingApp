@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tile_width">90.0dip</dimen>
+    <dimen name="socialicons">30.0dip</dimen>
+    <dimen name="tile_logo_height">90.0dip</dimen>
+</resources>

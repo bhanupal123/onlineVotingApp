@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/navBar" android:background="#ff3a9484" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <LinearLayout android:gravity="left" android:background="#ff4eb19f" android:paddingLeft="20.0dip" android:layout_width="130.0dip" android:layout_height="fill_parent" android:layout_weight="0.48">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:textColor="#ffffffff" android:layout_gravity="center_vertical" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="FACEBOOK" />
+        </LinearLayout>
+        <ImageButton android:layout_gravity="right" android:id="@id/btnSocialShare" android:background="#ff4eb19f" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/btnshare" android:scaleType="fitCenter" />
+    </LinearLayout>
+    <WebView android:id="@id/webView1" android:layout_width="fill_parent" android:layout_height="fill_parent"  android:layout_below="@id/choosesocial" />
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/tvError" android:layout_width="300.0dip" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/choosesocial" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_below="@id/navBar" android:layout_alignParentLeft="true">
+        <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <Button android:textColor="#ffffffff" android:id="@id/VoteBoxfb" android:background="#ff4eb19f" android:layout_width="70.0dip" android:layout_height="30.0dip" android:text="VoteBox" />
+            <Button android:textColor="#ffffffff" android:id="@id/Igloofb" android:background="#ff4eb19f" android:layout_width="70.0dip" android:layout_height="30.0dip" android:layout_marginLeft="20.0dip" android:text="Igloo" />
+        </LinearLayout>
+    </LinearLayout>
+    </RelativeLayout>

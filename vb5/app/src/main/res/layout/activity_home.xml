@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ff38bea6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/footer" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/imageView1" android:layout_width="@dimen/tile_logo_height" android:layout_height="@dimen/tile_logo_height" android:layout_marginTop="10.0dip" android:src="@drawable/logo_whitetext" android:scaleType="fitCenter" android:layout_centerHorizontal="true" />
+        <ScrollView android:gravity="center_horizontal" android:id="@id/scrollviewtiles" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_below="@id/imageView1" android:layout_alignParentLeft="true">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/linearLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:id="@id/tilelist1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageButton android:textSize="20.0sp" android:textColor="#ffffffff" android:id="@id/btnVote" android:background="#00000000" android:layout_width="@dimen/tile_width" android:layout_height="@dimen/tile_width" android:layout_margin="5.0dip" android:src="@drawable/tile_vote" android:scaleType="fitCenter" />
+                    <ImageButton android:textSize="20.0sp" android:textColor="#ffffffff" android:id="@id/btnResult" android:background="#00000000" android:layout_width="@dimen/tile_width" android:layout_height="@dimen/tile_width" android:layout_margin="5.0dip" android:src="@drawable/tile_result" android:scaleType="fitCenter" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/tilelist2" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageButton android:textSize="20.0sp" android:textColor="#ffffffff" android:id="@id/btnPoll" android:background="#00000000" android:layout_width="@dimen/tile_width" android:layout_height="@dimen/tile_width" android:layout_margin="5.0dip" android:src="@drawable/tile_poll" android:scaleType="fitCenter" />
+                    <ImageButton android:textSize="20.0sp" android:textColor="#ffffffff" android:id="@id/btnElection" android:background="#00000000" android:layout_width="@dimen/tile_width" android:layout_height="@dimen/tile_width" android:layout_margin="5.0dip" android:src="@drawable/tile_social" android:scaleType="fitCenter" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/tilelist3" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageButton android:textSize="20.0sp" android:textColor="#ffffffff" android:id="@id/btnPromo" android:background="#00000000" android:layout_width="@dimen/tile_width" android:layout_height="@dimen/tile_width" android:layout_margin="5.0dip" android:src="@drawable/tile_promote" android:scaleType="fitCenter" />
+                    <ImageButton android:textSize="20.0sp" android:textColor="#ffffffff" android:id="@id/btnAbout" android:background="#00000000" android:layout_width="@dimen/tile_width" android:layout_height="@dimen/tile_width" android:layout_margin="5.0dip" android:src="@drawable/tile_about" android:scaleType="fitCenter" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+       </RelativeLayout>
+    <RelativeLayout android:id="@id/footer" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_alignParentBottom="true" android:layout_alignParentStart="false" android:layout_alignParentEnd="false">
+        <LinearLayout android:orientation="vertical" android:background="#ff3f9888" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+       </RelativeLayout>
+</RelativeLayout>

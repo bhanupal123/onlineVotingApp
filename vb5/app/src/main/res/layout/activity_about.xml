@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/navBar" android:background="#ff3a9484" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <LinearLayout android:gravity="left" android:background="#ff4eb19f" android:paddingLeft="20.0dip" android:layout_width="130.0dip" android:layout_height="fill_parent" android:layout_weight="0.48">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:textColor="#ffffffff" android:layout_gravity="center_vertical" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ABOUT" />
+        </LinearLayout>
+    </LinearLayout>
+    <ScrollView android:id="@id/scroller" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_below="@id/navBar">
+        <TextView android:id="@id/abouttext" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/imgDp" android:layout_centerHorizontal="true" />
+    </ScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VoteBot is the solution for the hassle free voting.\n\nHow To Vote:\n1) Go to Home\n2) Go to Vote\n3) Select your State and City\n4) Select your favourite Candidiate.\n5) You can see the final result in Result section as Pie Chart.\n\nDeveloped By:\n13BCE011  Bhanupal Rathor\n13BCE015  Jenil Calcuttawala"
+        android:id="@+id/textView"
+        android:layout_alignTop="@id/scroller"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="47dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textStyle="normal" />
+</RelativeLayout>

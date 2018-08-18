@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">128.0dip</dimen>
+    <dimen name="tile_width">200.0dip</dimen>
+    <dimen name="socialicons">70.0dip</dimen>
+    <dimen name="tile_logo_height">200.0dip</dimen>
+</resources>

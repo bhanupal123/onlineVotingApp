@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/navBar" android:background="#ff3a9484" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <LinearLayout android:gravity="left" android:background="#ff4eb19f" android:paddingLeft="20.0dip" android:layout_width="130.0dip" android:layout_height="fill_parent" android:layout_weight="0.48">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:textColor="#ffffffff" android:layout_gravity="center_vertical" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="LIVE RESULT" />
+        </LinearLayout>
+        <ImageButton android:layout_gravity="right" android:id="@id/btnshareLive" android:background="#ff4eb19f" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/btnshare" android:scaleType="fitCenter" />
+    </LinearLayout>
+    <WebView android:scrollbarStyle="insideOverlay" android:id="@id/liveView" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/navBar" android:layout_alignParentLeft="true" />
+    <ProgressBar android:id="@id/progresser" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:progressDrawable="@drawable/customprogressbar" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="?android:attr/progressBarStyleHorizontal" />
+   </RelativeLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:id="@id/navBar"
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#ff3a9484"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="130.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.48"
+            android:background="#ff4eb19f"
+            android:gravity="left"
+            android:paddingLeft="20.0dip">
+
+            <TextView
+                android:id="@id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="RESULT"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#ffffffff"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@id/btnshareResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="10.0dip"
+            android:background="#ff4eb19f"
+            android:contentDescription="Share"
+            android:paddingBottom="4.0dip"
+            android:paddingTop="4.0dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btnshare" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@id/ResultList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/sp_stateRes"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="10.0dip"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="-1.0dip"
+        android:listSelector="@android:color/transparent" />
+
+    <Button
+        android:id="@id/btnLiveElection"
+        android:layout_width="210.0dip"
+        android:layout_height="40.0dip"
+        android:layout_below="@id/navBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10.0dip"
+        android:background="@drawable/btn_change_state_selected"
+        android:text="Live Election results 2014"
+        android:textColor="#ffffffff"
+        android:textSize="16.0sp" />
+
+    <Spinner
+        android:id="@id/sp_stateRes"
+        android:layout_width="130.0dip"
+        android:layout_height="35.0dip"
+        android:layout_alignLeft="@id/ResultList"
+        android:layout_alignTop="@id/sp_stateConsRes"
+        android:layout_marginLeft="20.0dip"
+        android:background="@drawable/result_spinner_bg"
+        android:entries="@array/states_list_Result"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="16.0dip"
+        android:prompt="@string/state_prompt" />
+
+    <Spinner
+        android:id="@id/sp_stateConsRes"
+        android:layout_width="130.0dip"
+        android:layout_height="35.0dip"
+        android:layout_alignRight="@id/ResultList"
+        android:layout_below="@id/btnLiveElection"
+        android:layout_marginRight="20.0dip"
+        android:layout_marginTop="20.0dip"
+        android:background="@drawable/result_spinner_bg"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="16.0dip"
+        android:prompt="@string/const_prompt" />
+</RelativeLayout>
